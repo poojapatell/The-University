@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Design</title>
+    <link rel="stylesheet" href="/css/blogcss.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+    
+</style>
+
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html;"><img src="logou.png" alt=""></a>
+            <div class="navlink" id="navlinkid">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Course.html">Course</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+    <section class="blockcontent">
+        <div class="row">
+            <div class="bl"><img src="bcw.jpg" alt="">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio autem temporibus doloribus,
+                    nobis quaerat sint sed! Voluptatibus sapiente aut similique est minus adipisci rem omnis.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tenetur quia repellat hic, eos,
+                    namqui atque autem fuga nobis reiciendis iusto harum officiis illo quos distinctio saepe?Lorem ipsum
+                    dolor sit amet consectetur, adipisicing elit. Debitis ea numquam, voluptatibus veniam assumenda
+                    optio!</p><br>
+                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic incidunt
+                    asperiores fuga earum debitis perferendis deserunt eum consequatur similique? consectetur
+                    adipisicing elit. Iure consequatur id beatae velit dolorem
+                    molestiae quas, accusantium minima nihil delectus incidunt. Aliquam modi nesciunt doloribus ullam
+                    eos neque quo quam!</p><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eveniet illo alias ratione ullam
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, pariatur?
+                    nihil, vero provident at ab delectus consectetur sit nulla officiis.</p>
+                    <div class="comment"><h3>Leave Your Review</h3>
+                        <textarea name="ta" id="ta" cols="20" rows="2"></textarea>
+                        <input type="submit" onclick="fun()" value="Add" id="bt" class="btn expbtn">
+                        <div class="beaut" id="area"></div>
+                    </div>
+                    </div>
+            <div class="br">
+                <h3> Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore tempora minima recusandae laudantium ad!
+            Commodi <br> voluptas minus officia iste perspiciatis ipsum cumque aut nulla quos.</p><br>
+        <div class="icons">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+    <script>
+        var navlinkid = document.getElementById("navlinkid");
+        function showMenu() {
+            navlinkid.style.right = "0";
+        }
+        function hideMenu() {
+            navlinkid.style.right = "-200px";
+        }
+        btn=document.getElementById("bt")
+        area=document.getElementById("area")
+        ta=document.getElementById("ta")
+        function fun(){
+        console.log("hii")
+        text=ta.value
+        area.innerHTML=area.innerHTML+"Review : "+text+"<br/>"
+        // area.innerHTML=```{{text}}``''
+        }
+    </script>
+</body>
+
+</html>
